@@ -67,7 +67,7 @@ func TestClient_ClosePreOrder(t *testing.T) {
 	req := &ClosePreOrderRequest{
 		Mid:              merchantCode,
 		RequestTimestamp: time.Now().Format("2006-01-02 15:04:05"),
-		MerOrderId:       "103A1666706976",
+		MerOrderId:       "11111666706976",
 		Tid:              terminalCode,
 		InstMid:          "APPDEFAULT",
 	}
@@ -84,7 +84,7 @@ func TestClient_CloseWxPreOrder(t *testing.T) {
 	req := &ClosePreOrderRequest{
 		Mid:              merchantCode,
 		RequestTimestamp: time.Now().Format("2006-01-02 15:04:05"),
-		MerOrderId:       "103A1666706976",
+		MerOrderId:       "11111666706976",
 		Tid:              terminalCode,
 		InstMid:          "APPDEFAULT",
 	}
@@ -101,7 +101,7 @@ func TestClient_CloseAliPreOrder(t *testing.T) {
 	req := &ClosePreOrderRequest{
 		Mid:              merchantCode,
 		RequestTimestamp: time.Now().Format("2006-01-02 15:04:05"),
-		MerOrderId:       "103A1666750033",
+		MerOrderId:       "11111666750033",
 		Tid:              terminalCode,
 		InstMid:          "APPDEFAULT",
 	}
@@ -118,7 +118,7 @@ func TestClient_Refund(t *testing.T) {
 	req := &RefundRequest{
 		Mid:              merchantCode,
 		RequestTimestamp: time.Now().Format("2006-01-02 15:04:05"),
-		MerOrderId:       "103A1666750033",
+		MerOrderId:       "11111666750033",
 		Tid:              terminalCode,
 		InstMid:          "APPDEFAULT",
 		RefundAmount:     1,
@@ -136,10 +136,10 @@ func TestClient_PreOrderQuery(t *testing.T) {
 	req := &QueryOrderRequest{
 		Mid:              merchantCode,
 		RequestTimestamp: time.Now().Format("2006-01-02 15:04:05"),
-		MerOrderId:       "103A1666750033",
+		MerOrderId:       "11111666750033",
 		Tid:              terminalCode,
 		InstMid:          "APPDEFAULT",
-		TargetOrderId:    "103A1666750033",
+		TargetOrderId:    "11111666750033",
 	}
 
 	response, err := client.PreOrderQuery(req)
@@ -154,10 +154,10 @@ func TestClient_WxPreOrderQuery(t *testing.T) {
 	req := &QueryOrderRequest{
 		Mid:              merchantCode,
 		RequestTimestamp: time.Now().Format("2006-01-02 15:04:05"),
-		MerOrderId:       "103A1666750033",
+		MerOrderId:       "11111666750033",
 		Tid:              terminalCode,
 		InstMid:          "APPDEFAULT",
-		TargetOrderId:    "103A1666750033",
+		TargetOrderId:    "11111666750033",
 	}
 
 	response, err := client.WxPreOrderQuery(req)
@@ -172,7 +172,7 @@ func TestClient_RefundQuery(t *testing.T) {
 	req := &QueryRefundRequest{
 		Mid:              merchantCode,
 		RequestTimestamp: time.Now().Format("2006-01-02 15:04:05"),
-		MerOrderId:       "103A1666750033",
+		MerOrderId:       "11111666750033",
 		Tid:              terminalCode,
 		InstMid:          "APPDEFAULT",
 	}
